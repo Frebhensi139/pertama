@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Anonim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .message{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0ffe0;
+            border: 1px solid #00b300;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="sendButton" onclick="showMessage()">Klik Aja</button>
+        <div id="messageDisplay" class="message">
+            “Tidak apa-apa untuk menangis selama kamu terus bergerak maju.”<br>- All Might
+            <p>“Kamu hanya perlu percaya. Kamu harus percaya bahwa sesuatu yang luar biasa bisa terjadi.<br>- Po</p>
+            <p>"Kadang-kadang kita harus masuk ke dalam diri kita sendiri untuk menyelesaikan masalah kita."<br>- Patrick Star</p>
+            <div>
+            <button onclick="redirectToVideo()">Kembali</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function showMessage() {
+            var sendButton = document.getElementById('sendButton');
+            var messageDisplay = document.getElementById('messageDisplay');
+            sendButton.style.display = 'none';
+            messageDisplay.style.display = 'block';
+        }
+
+        function redirectToVideo() {
+            window.location.href = 'vdeo.html';
+        }
+    </script>
+</body>
+</html> 
